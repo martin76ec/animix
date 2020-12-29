@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animix Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <div class="header__logo--logo">
+          <img class="header__img" src="assets/logo.svg" alt="Animix Logo" />
+        </div>
+        <div class="header__logo--name">Animix</div>
+      </div>
+      <div class="header__menu">
+        <div class="profile" onclick="menuToggle();">
+          <img
+            class="header__menu--profile-img"
+            src="assets/profile.svg"
+            alt="profile"
+          />
+          <ul class="header__menu--profile-options">
+            <li>Settings</li>
+            <li>Sign Out</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main__section recommend">
+        <h1>Recommended</h1>
+        <div class="recommend__carousel">
+          <div
+            id="carousel_1"
+            class="recommend__carousel--container"
+            onclick="carouselToggle(this.id)"
+          >
+            <div class="image">
+              <img
+                class="image__img"
+                src="assets/covers/nanatsu.jpeg"
+                alt="nanatsu"
+              />
+            </div>
+            <div class="information">
+              <div class="information__text">
+                <h1>Nanatsu no Taizai</h1>
+                <p>
+                  Ad duis proident adipisicing laboris. Cillum exercitation
+                  eiusmod velit ea commodo excepteur. Duis nisi sint quis
+                  commodo ex deserunt in nulla adipisicing Lorem nulla non
+                  nostrud cupidatat. Voluptate non ex dolor ex nisi labore
+                  incididunt aute irure. Irure ad consequat ut esse. Dolor
+                  nostrud aliqua occaecat non ea et dolor cillum excepteur duis
+                  labore duis enim tempor. Adipisicing voluptate adipisicing
+                  cillum dolor sunt commodo ut consectetur aliquip pariatur
+                  aliqua labore reprehenderit. Labore aliquip laborum deserunt
+                  Lorem aliquip id nisi incididunt commodo commodo. Aute anim
+                  deserunt minim nisi veniam ipsum ex ut reprehenderit laborum
+                  aliquip mollit. Culpa non deserunt dolore et.
+                </p>
+              </div>
+              <div class="information__buttons">
+                <button class="information__buttons--red">Close</button>
+                <button class="information__buttons--orange">I like it</button>
+                <button class="information__buttons--orange">
+                  Add to my list
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="carousel_2"
+            class="recommend__carousel--container"
+            onclick="carouselToggle(this.id)"
+          >
+            <div class="image">
+              <img
+                class="image__img"
+                src="assets/covers/naruto.png"
+                alt="naruto"
+              />
+            </div>
+            <div class="information">
+              <div class="information__text">
+                <h1>Naruto Shippuden</h1>
+                <p>
+                  Nostrud duis sunt culpa qui velit et qui amet. Reprehenderit
+                  consectetur irure ut excepteur non consequat anim labore anim
+                  cupidatat ea. Incididunt esse commodo eu cillum ad consectetur
+                  mollit labore anim pariatur non nisi. Cillum ad laborum magna
+                  et. Lorem pariatur reprehenderit est in id proident. Eiusmod
+                  ea laborum eu sit in aliqua. Ad officia cupidatat id id
+                  cupidatat qui sint. Anim nulla magna sunt laboris do tempor
+                  esse ipsum.
+                </p>
+              </div>
+              <div class="information__buttons">
+                <button class="information__buttons--red">Close</button>
+                <button class="information__buttons--orange">I like it</button>
+                <button class="information__buttons--orange">
+                  Add to my list
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="carousel_3"
+            class="recommend__carousel--container"
+            onclick="carouselToggle(this.id)"
+          >
+            <div class="image">
+              <img
+                class="image__img"
+                src="assets/covers/titan.jpg"
+                alt="naruto"
+              />
+            </div>
+            <div class="information">
+              <div class="information__text">
+                <h1>Attack on Titan</h1>
+                <p>
+                  Sit nisi ullamco culpa duis anim in tempor deserunt nostrud
+                  reprehenderit eiusmod mollit officia. Consectetur dolore
+                  commodo ad cillum dolore id irure occaecat aute eiusmod id
+                  occaecat. Ipsum officia do nulla quis velit exercitation
+                  cupidatat nisi ad duis dolore. Dolore quis voluptate
+                  incididunt ea ex dolor sunt. Ad quis quis incididunt ullamco
+                  sint aute. Proident incididunt qui enim irure. Laborum dolore
+                  sint nisi id do laboris anim enim occaecat aliquip cupidatat
+                  aliqua ex eu. Quis Lorem exercitation tempor ex veniam.
+                  Incididunt dolore sunt sunt non voluptate laboris in. Est
+                  cupidatat dolore sunt deserunt non incididunt esse eiusmod
+                  ipsum aliquip veniam cillum. Magna do esse occaecat cillum.
+                </p>
+              </div>
+              <div class="information__buttons">
+                <button class="information__buttons--red">Close</button>
+                <button class="information__buttons--orange">I like it</button>
+                <button class="information__buttons--orange">
+                  Add to my list
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="carousel_4"
+            class="recommend__carousel--container"
+            onclick="carouselToggle(this.id)"
+          >
+            <div class="image">
+              <img
+                class="image__img"
+                src="assets/covers/inuyasha.png"
+                alt="naruto"
+              />
+            </div>
+            <div class="information">
+              <div class="information__text">
+                <h1>Inuyasha</h1>
+                <p>
+                  Sit nisi ullamco culpa duis anim in tempor deserunt nostrud
+                  reprehenderit eiusmod mollit officia. Consectetur dolore
+                  commodo ad cillum dolore id irure occaecat aute eiusmod id
+                  occaecat. Ipsum officia do nulla quis velit exercitation
+                  cupidatat nisi ad duis dolore. Dolore quis voluptate
+                  incididunt ea ex dolor sunt. Ad quis quis incididunt ullamco
+                  sint aute. Proident incididunt qui enim irure. Laborum dolore
+                  sint nisi id do laboris anim enim occaecat aliquip cupidatat
+                  aliqua ex eu. Quis Lorem exercitation tempor ex veniam.
+                  Incididunt dolore sunt sunt non voluptate laboris in. Est
+                  cupidatat dolore sunt deserunt non incididunt esse eiusmod
+                  ipsum aliquip veniam cillum. Magna do esse occaecat cillum.
+                </p>
+              </div>
+              <div class="information__buttons">
+                <button class="information__buttons--red">Close</button>
+                <button class="information__buttons--orange">I like it</button>
+                <button class="information__buttons--orange">
+                  Add to my list
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="carousel_5"
+            class="recommend__carousel--container"
+            onclick="carouselToggle(this.id)"
+          >
+            <div class="image">
+              <img
+                class="image__img"
+                src="assets/covers/fma.jpeg"
+                alt="naruto"
+              />
+            </div>
+            <div class="information">
+              <div class="information__text">
+                <h1>Full Metal Alchemist</h1>
+                <p>
+                  Sit nisi ullamco culpa duis anim in tempor deserunt nostrud
+                  reprehenderit eiusmod mollit officia. Consectetur dolore
+                  commodo ad cillum dolore id irure occaecat aute eiusmod id
+                  occaecat. Ipsum officia do nulla quis velit exercitation
+                  cupidatat nisi ad duis dolore. Dolore quis voluptate
+                  incididunt ea ex dolor sunt. Ad quis quis incididunt ullamco
+                  sint aute.
+                </p>
+              </div>
+              <div class="information__buttons">
+                <button class="information__buttons--red">Close</button>
+                <button class="information__buttons--orange">I like it</button>
+                <button class="information__buttons--orange">
+                  Add to my list
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section menu">
+          <h1>Anime Series</h1>
+        <div class="menu_carousel">
+            
+        </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+      function menuToggle() {
+        const profile = document.querySelector(".header__menu--profile-img ");
+        const menu = document.querySelector(".header__menu--profile-options");
+        menu.classList.toggle("active");
+        profile.classList.toggle("active-img");
+      }
+
+      function carouselToggle(container_id) {
+        var containers = document.querySelectorAll(
+          ".recommend__carousel--container"
+        );
+        const container = document.querySelector("#" + container_id);
+        containers.forEach(function hide(item) {
+          if (item.id != container.id) item.classList.toggle("carousel_hide");
+        });
+        container.classList.toggle("carousel_extend");
+      }
+    </script>
+  </body>
+</html>

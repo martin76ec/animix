@@ -1,0 +1,253 @@
+.header__menu {
+  align-items: center;
+  display: flex;
+  height: ;
+}
+
+.profile {
+  border-radius: 5px;
+  max-height: 40px;
+  max-width: 40px;
+  overflow: hidden;
+}
+
+.header__menu--profile-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.header__menu--profile-img:hover {
+  background-color: #ffac81;
+  cursor: pointer;
+}
+
+.active-img {
+  background-color: #ffac81;
+}
+
+.header__menu--profile-options {
+  background-color: #ff928b;
+  border-radius: 5px;
+  color: #f5f1cc;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  min-width: 100px;
+  letter-spacing: 1.5px;
+  list-style: none;
+  padding: 30px 0 0 0;
+  right: 20px;
+  top: 90px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.header__menu--profile-options::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff928b;
+  transform: rotate(45deg);
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.25s;
+  top: 80px;
+}
+
+.header__menu--profile-options > li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.header__menu--profile-options > li:hover {
+  background-color: #f5f1cc;
+  color: #ffac81;
+  cursor: pointer;
+}
+
+main {
+  background-color: #f5f1cc;
+  padding-top: 50px;
+}
+
+.recommend {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  height: 80vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main__section {
+  margin-bottom: 50px;
+}
+
+.main__section > h1 {
+  padding-left: 20px;
+  color: #ff928b;
+  font-family: "Rubik", sans-serif;
+}
+
+.recommend__carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommend__carousel--container {
+  display: inline-block;
+  background-color: #ff928b;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.information {
+  background-color: #cdeac0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.carousel_hide {
+  display: none;
+}
+
+.carousel_extend {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  transition: 0.25s;
+  width: 100%;
+}
+
+.carousel_extend .image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image__img {
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: -50%;
+  width: 200%;
+  object-fit: cover;
+}
+
+.carousel_extend .image__img {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.image:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 146, 139, 0.4),
+    rgba(255, 146, 139, 1)
+  );
+  mix-blend-mode: color;
+}
+
+.carousel_extend .information {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3fr 1fr;
+  font-family: "Rubik", sans-serif;
+  padding: 10px;
+  visibility: visible;
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
+  overflow: scroll;
+}
+
+.carousel_extend .information .information__text {
+  align-items: flex-end;
+  color: #f5f1cc;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 0 5% 0 20%;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.carousel_extend .information .information__text h1 {
+  font-weight: 700;
+  background-color: #ffac81;
+}
+
+.carousel_extend .information .information__text p {
+    background-color: #ffac81;
+    color: white;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.carousel_extend .information .information__buttons {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5% 0 20%;
+}
+
+.carousel_extend .information .information__buttons button {
+  border: 0;
+  color: #f5f1cc;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  min-height: 50px;
+  max-height: 30px;
+  min-width: 150px;
+}
+
+.carousel_extend .information .information__buttons button:hover {
+  cursor: pointer;
+}
+
+.information__buttons--orange {
+  background-color: #ffac81;
+}
+
+.information__buttons--red {
+  background-color: #ff928b;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr 0.5fr;
+    height: 60vh;
+}
+
+.menu_carousel {
+    background-color: aqua;
+}
