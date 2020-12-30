@@ -323,11 +323,6 @@ main {
     visibility: visible;
 }
 
-.hovered {
-    opacity: 1;
-    visibility: visible;
-}
-
 .menu-carousel__carousel-container:hover .menu-carousel__carousel-container--image img {
     width: 250%;
     transition: .5s;
